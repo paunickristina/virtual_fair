@@ -5,6 +5,8 @@ import Head from "next/head";
 
 // components
 import NewsBlock from "@/components/NewsBlock";
+import Employers from "@/components/Employers";
+import Employees from "@/components/Employees";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:4000/api/v1/job`);
@@ -27,8 +29,9 @@ const Home: NextPage = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1 className="text-3xl font-bold underline font-sans">Hello world!</h1>
         <NewsBlock news={data} />
+        <Employers />
+        <Employees />
       </div>
     </>
   );

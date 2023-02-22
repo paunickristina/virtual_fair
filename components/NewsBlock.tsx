@@ -1,26 +1,32 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 // components
-import News from "./News";
+import NewsCard from "./NewsCard";
 
 type IProps = {
   news: {
-    id: string,
+    id: string;
     jobName: string;
     description: string;
     createdAt: Date;
   }[];
 };
 
-const NewsBlock = ({ news }: IProps) => {
-  console.log("data:", news);
+const NewsBlock: FunctionComponent<IProps> = ({ news }) => {
   return (
-    <div>
-      <h2>Будите информисани, све информације и обавештења на једном месту</h2>
-      <div>
-        {news && news.map((news: any) => <News key={news.id} news={news} />)}
+    <section className="wrapper lg:wrapper md:pt-16 md:pb-32">
+      <div className="l">
+        <h2 className="text-center md:w-4/5 xl:w-2/3 mx-auto uppercase  md:pb-28">
+          Будите информисани, све информације и обавештења на једном месту
+        </h2>
+        <div className="flex flex-wrap justify-between">
+          {news &&
+            news
+              .slice(0, 4)
+              .map((news: any) => <NewsCard key={news.id} news={news} />)}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

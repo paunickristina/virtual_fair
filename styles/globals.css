@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    font-size: 52px;
+    line-height: 60px;
+    @apply text-black uppercase;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+    @apply text-black uppercase;
+  }
+  h3 {
+    font-size: 21px;
+    line-height: 28px;
+    @apply text-black;
+  }
+  .p1 {
+    /* change font-family to Lato */
+    @apply text-base;
+  }
+  .p2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .p3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@layer components {
+  .wrapper {
+    max-width: 100%;
+    /* check this: */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media screen(lg) {
+    .wrapper {
+      margin-left: 44px;
+      margin-right: 44px;
+    }
+  }
+  .l {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+  }
+  .tag-red {
+    @apply bg-lightRed bg-opacity-10 text-sm font-semibold capitalize py-2 px-5 rounded-full;
+  }
+  .tag-gray {
+    @apply bg-lightGray bg-opacity-10 text-sm font-semibold capitalize py-2 px-5 rounded-full;
+  }
+}
