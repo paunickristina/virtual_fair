@@ -5,8 +5,8 @@ import statisticsImage from "../public/assets/statistics.jpg";
 const Statistics = (): JSX.Element => {
   return (
     <>
-      <section className="wrapper lg:wrapper bg-secondary-100 rounded-t-lg pr-6 pl-14">
-        <div className="l flex justify-between">
+      <section className="wrapper lg:wrapper bg-secondary-100 rounded-t-lg">
+        <div className="l flex justify-between pr-6 pl-14">
           <div className="w-2/5 my-5">
             <span className="tag-red">Саопштења</span>
             <h2 className="uppercase pt-10 pb-2">Статистика тржишта рада</h2>
@@ -31,7 +31,7 @@ const Statistics = (): JSX.Element => {
           </div>
         </div>
       </section>
-      <section className="wrapper lg:wrapper bg-primary-700 rounded-b-lg pt-10 pb-6 text-white">
+      <section className="wrapper lg:wrapper bg-primary-700 rounded-b-lg pt-10 pb-6 mb-[123px] text-white">
         <div className="l flex">
           <div className="w-[25.5%] pl-[4%] pr-[2%] border-r border-white border-opacity-30">
             <h4 className="mb-[14%]">Број незапослених лица на евиденцији НСЗ</h4>

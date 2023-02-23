@@ -5,8 +5,8 @@ import employeesImage from "../public/assets/employees.jpg";
 
 const Employees = (): JSX.Element => {
   return (
-    <section className="wrapper lg:wrapper bg-secondary-100 rounded-lg pl-6 pr-14 mb-32">
-      <div className="l flex justify-between ">
+    <section className="wrapper lg:wrapper bg-secondary-100 rounded-lg mb-32">
+      <div className="l flex justify-between pl-6 pr-14">
         <div className="w-[52.3%] rounded overflow-hidden my-5">
           <Image
             alt="image"
