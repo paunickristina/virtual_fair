@@ -6,17 +6,23 @@
   h1 {
     font-size: 52px;
     line-height: 60px;
-    @apply text-black uppercase;
+    @apply text-black uppercase font-medium;
   }
   h2 {
     font-size: 32px;
-    line-height: 42px;
-    @apply text-black uppercase;
+    line-height: 46px;
+    @apply text-black uppercase font-medium;
   }
   h3 {
-    font-size: 21px;
+    /* check this: */
+    font-size: 20px;
     line-height: 28px;
-    @apply text-black;
+    @apply text-black font-semibold;
+  }
+  h4 {
+    font-size: 21px;
+    line-height: 30px;
+    @apply font-semibold;
   }
   .p1 {
     /* change font-family to Lato */

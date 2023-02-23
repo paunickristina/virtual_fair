@@ -6,7 +6,7 @@ import employersImage from "../public/assets/employers.jpg";
 const Employers = (): JSX.Element => {
   return (
     <section className="wrapper lg:wrapper bg-secondary-100 rounded-lg pr-6 pl-14 mb-11">
-      <div className="l flex justify-between ">
+      <div className="l flex justify-between">
         <div className="w-2/5">
           <h2 className="uppercase pt-8 pb-20">ПОСЛОДАВЦИ</h2>
           <p className="p1">

@@ -1,4 +1,4 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -18,7 +18,9 @@ module.exports = {
           100: "#fee1e1",
           500: "#ee4343",
           600: "#dc2828",
-          700: "#ba1b1b",
+          // 700: "#ba1b1b",
+          // check this:
+          700: "#ba1c1c",
           800: "#971a1a",
         },
         secondary: {
@@ -33,17 +35,13 @@ module.exports = {
         lightGray: "#8176F9",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        52: ["52px"],
       },
       screens: {
         "2xl": "1440px",
-      },
-      gridTemplateColumns: {
-        fluid: "repeat(auto-fit, minmax(15rem, 1fr))",
-      },
-      width: {
-        23.5: "23.5%",
-        48.5: "48.5%",
       },
     },
   },

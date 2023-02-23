@@ -7,6 +7,7 @@ import Head from "next/head";
 import NewsBlock from "@/components/NewsBlock";
 import Employers from "@/components/Employers";
 import Employees from "@/components/Employees";
+import Statistics from "@/components/Statistics";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:4000/api/v1/job`);
@@ -28,11 +29,12 @@ const Home: NextPage = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <main className="font-inter">
         <NewsBlock news={data} />
         <Employers />
         <Employees />
-      </div>
+        <Statistics />
+      </main>
     </>
   );
 };

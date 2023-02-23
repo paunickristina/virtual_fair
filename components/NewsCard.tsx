@@ -19,7 +19,7 @@ const formatDate = (date: Date) => {
 const News: FunctionComponent<IProps> = ({ news }) => {
   console.log(news);
   return (
-    <div className="w-48.5 lg:w-23.5">
+    <div className="w-[48.5%] lg:w-[23.5%]">
       <span className="tag-red">{news.description}</span>
       <span className="text-sm font-semibold ml-3.5">
         {formatDate(news.createdAt)}
