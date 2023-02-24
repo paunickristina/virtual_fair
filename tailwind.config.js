@@ -40,9 +40,13 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        lato: ["Lato", ...defaultTheme.fontFamily.sans],
       },
       screens: {
         "2xl": "1440px",
+      },
+      gridTemplateColumns: {
+        logos: "18% 1fr 1fr 1fr",
       },
     },
   },

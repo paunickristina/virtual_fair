@@ -4,7 +4,7 @@ import Image from "next/image";
 import microsoftImage from "../public/assets/logos/microsoft.png";
 import nestleImage from "../public/assets/logos/nestle.png";
 
-const Logos = (): JSX.Element => {
+const LogosEmployers = (): JSX.Element => {
   return (
     <section className="wrapper lg:wrapper mb-28">
       check this: scroll and border width?
@@ -13,31 +13,26 @@ const Logos = (): JSX.Element => {
           <span className="tag tag-big bg-lightGray-100">ПОСЛОДАВЦИ</span>
         </div>
         <Link href="" className="w-32 mx-16">
-          <Image
-            alt="image"
-            src={microsoftImage}
-            placeholder="blur"
-            width="150"
-          />
+          <Image alt="image" src={microsoftImage} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} placeholder="blur" />
+          <Image alt="image" src={nestleImage} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={microsoftImage} placeholder="blur" />
+          <Image alt="image" src={microsoftImage} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} placeholder="blur" />
+          <Image alt="image" src={nestleImage} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={microsoftImage} placeholder="blur" />
+          <Image alt="image" src={microsoftImage} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} placeholder="blur" />
+          <Image alt="image" src={nestleImage} />
         </Link>
       </div>
     </section>
   );
 };
 
-export default Logos;
+export default LogosEmployers;
