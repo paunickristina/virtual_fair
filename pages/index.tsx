@@ -9,6 +9,7 @@ import Employers from "@/components/Employers";
 import Employees from "@/components/Employees";
 import Statistics from "@/components/Statistics";
 import PreviousFairs from "@/components/PreviousFairs";
+import Logos from "@/components/Logos";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:4000/api/v1/job`);
@@ -36,6 +37,7 @@ const Home: NextPage = ({
         <Employees />
         <Statistics />
         <PreviousFairs />
+        <Logos />
       </main>
     </>
   );

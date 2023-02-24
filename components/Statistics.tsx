@@ -8,7 +8,7 @@ const Statistics = (): JSX.Element => {
       <section className="wrapper lg:wrapper bg-secondary-100 rounded-t-lg">
         <div className="l flex justify-between pr-6 pl-14">
           <div className="w-2/5 my-5">
-            <span className="tag-red">Саопштења</span>
+            <span className="tag tag-white">Саопштења</span>
             <h2 className="uppercase pt-10 pb-2">Статистика тржишта рада</h2>
             <span className="uppercase text-xl font-extrabold ">отворени подаци</span>
             <p className="p1 pt-32">
@@ -35,19 +35,19 @@ const Statistics = (): JSX.Element => {
         <div className="l flex">
           <div className="w-[25.5%] pl-[4%] pr-[2%] border-r border-white border-opacity-30">
             <h4 className="mb-[14%]">Број незапослених лица на евиденцији НСЗ</h4>
-            <p className="text-52">427.594</p>
+            <p className="text-[52px]">427.594</p>
           </div>
           <div className="w-[25.5%] pl-[4%] pr-[2%] border-r border-white border-opacity-30">
             <h4 className="mb-[14%]">Број тражилаца промене запослења</h4>
-            <p className="text-52">1.578</p>
+            <p className="text-[52px]">1.578</p>
           </div>
           <div className="w-[25.5%] pl-[3%] pr-[2%] border-r border-white border-opacity-30">
             <h4 className="mb-[14%]">Број осталих тражилаца запослења</h4>
-            <p className="text-52">4.012</p>
+            <p className="text-[52px]">4.012</p>
           </div>
           <div className="w-[23.5%] pl-[4%] pr-[2%]">
             <h4 className="mb-[14%]">Број оглашених радних позиција</h4>
-            <p className="text-52">518</p>
+            <p className="text-[52px]">518</p>
           </div>
         </div>
       </section>

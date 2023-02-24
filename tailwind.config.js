@@ -32,13 +32,14 @@ module.exports = {
           900: "#1c1917",
         },
         lightRed: "#F97676",
-        lightGray: "#8176F9",
+        lightPurple: "#8176F9",
+        lightGray: {
+          50: "#ededed",
+          100: "#f7f7f7",
+        },
       },
       fontFamily: {
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
-      },
-      fontSize: {
-        52: ["52px"],
       },
       screens: {
         "2xl": "1440px",

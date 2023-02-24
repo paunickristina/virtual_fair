@@ -56,10 +56,19 @@
     max-width: 1352px;
     margin: 0 auto;
   }
-  .tag-red {
-    @apply bg-lightRed bg-opacity-10 text-sm font-semibold capitalize py-2 px-5 rounded-full;
+  .tag {
+    @apply text-sm font-semibold capitalize py-2 px-5 rounded-full;
   }
-  .tag-gray {
-    @apply bg-lightGray bg-opacity-10 text-sm font-semibold capitalize py-2 px-5 rounded-full;
+  .tag-big {
+    @apply text-base;
+  }
+  .tag-red {
+    @apply bg-lightRed bg-opacity-10;
+  }
+  .tag-purple {
+    @apply bg-lightPurple bg-opacity-10;
+  }
+  .tag-white {
+    @apply bg-white bg-opacity-75;
   }
 }
