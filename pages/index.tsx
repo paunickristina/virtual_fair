@@ -10,6 +10,7 @@ import Employees from "@/components/Employees";
 import Statistics from "@/components/Statistics";
 import PreviousFairs from "@/components/PreviousFairs";
 import LogosEmployers from "@/components/LogosEmployers";
+import HpVideo from "@/components/HpVideo";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:4000/api/v1/job`);
@@ -34,6 +35,7 @@ const Home: NextPage = ({
       <Statistics />
       <PreviousFairs />
       <LogosEmployers />
+      <HpVideo />
     </>
   );
 };
