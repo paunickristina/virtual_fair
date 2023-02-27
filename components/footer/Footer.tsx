@@ -4,11 +4,13 @@ import React from "react";
 import LogosPartners from "./LogosPartners";
 import FooterNav from "./FooterNav";
 import Copyright from "./Copyright";
+import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
     <footer>
       <LogosPartners />
+      <Newsletter />
       <FooterNav />
       <Copyright />
     </footer>

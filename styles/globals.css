@@ -71,4 +71,16 @@
   .tag-white {
     @apply bg-white bg-opacity-75;
   }
+  .btn {
+    @apply flex justify-center items-center py-4 px-[52px] rounded-lg font-semibold text-[16px] text-white;
+  }
+  .btn-red {
+    @apply bg-primary-700;
+  }
+  .newsletter-form {
+    @apply flex justify-between items-center h-[77px] pr-[3%] pl-[4.3%] rounded-lg bg-white border border-lightGray-50;
+  }
+  .newsletter-input {
+    @apply text-black opacity-[33%] font-medium text-[21px] outline-0 placeholder-black w-3/5;
+  }
 }
