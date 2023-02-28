@@ -23,6 +23,7 @@ const NewsBlock: FunctionComponent<IProps> = ({ news }) => {
           {news &&
             news
               .slice(0, 4)
+              // check this any:
               .map((news: any) => <NewsCard key={news.id} news={news} />)}
         </div>
       </div>

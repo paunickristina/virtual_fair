@@ -30,7 +30,7 @@ const Home: NextPage = ({
       <Head>
         <title>Virtual Fair</title>
       </Head>
-      <HeroSlider />
+      <HeroSlider fairs={data} />
       <NewsBlock news={data} />
       <Employers />
       <Employees />

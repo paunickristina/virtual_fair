@@ -17,7 +17,6 @@ const formatDate = (date: Date) => {
 };
 
 const News: FunctionComponent<IProps> = ({ news }) => {
-  console.log(news);
   return (
     <div className="w-[48.5%] lg:w-[23.5%]">
       <span className="tag tag-red">{news.description}</span>

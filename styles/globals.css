@@ -77,6 +77,9 @@
   .btn-red {
     @apply bg-primary-700;
   }
+  .heroSlider-current {
+    @apply font-semibold mr-3 inline-block after:inline-block after:align-middle after:bg-black after:w-9 after:h-[1px] after:ml-2 after:mb-1;
+  }
   .newsletter-form {
     @apply flex justify-between items-center h-[77px] pr-[3%] pl-[4.3%] rounded-lg bg-white border border-lightGray-50;
   }
