@@ -4,6 +4,7 @@ import { InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 
 // components
+import HeroSlider from "@/components/HeroSlider";
 import NewsBlock from "@/components/NewsBlock";
 import Employers from "@/components/Employers";
 import Employees from "@/components/Employees";
@@ -29,6 +30,7 @@ const Home: NextPage = ({
       <Head>
         <title>Virtual Fair</title>
       </Head>
+      <HeroSlider />
       <NewsBlock news={data} />
       <Employers />
       <Employees />

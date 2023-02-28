@@ -34,6 +34,7 @@ module.exports = {
         lightGray: {
           50: "#ededed",
           100: "#f7f7f7",
+          200: "#d9d9d9",
         },
       },
       fontFamily: {

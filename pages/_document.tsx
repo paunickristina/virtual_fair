@@ -12,6 +12,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
       </Head>
       <body className="font-inter">
         <Main />
