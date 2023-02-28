@@ -4,6 +4,7 @@ import Link from "next/link";
 
 // images
 import previousFairs from "../public/assets/previousFairs.jpg";
+import arrow from "../public/assets/svgs/arrow-right-red.svg";
 
 const PreviousFairs = (): JSX.Element => {
   return (
@@ -14,9 +15,10 @@ const PreviousFairs = (): JSX.Element => {
         </div>
         <Link
           href=""
-          className="absolute bottom-[68px] left-1/2 -translate-x-1/2"
+          className="btn btn-white px-6 absolute bottom-[68px] left-1/2 -translate-x-1/2"
         >
           Претходни Сајмови
+          <Image alt="image" src={arrow} className="inline-block ml-4" />
         </Link>
       </div>
     </section>

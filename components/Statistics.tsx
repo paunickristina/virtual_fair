@@ -9,13 +9,13 @@ const Statistics = (): JSX.Element => {
     <>
       <section className="wrapper lg:wrapper bg-secondary-100 rounded-t-lg">
         <div className="l flex justify-between pr-6 pl-14">
-          <div className="w-2/5 my-5">
+          <div className="w-2/5 mt-6">
             <span className="tag tag-white">Саопштења</span>
-            <h2 className="uppercase pt-10 pb-2">Статистика тржишта рада</h2>
+            <h2 className="uppercase pt-[34px] pb-2">Статистика тржишта рада</h2>
             <span className="uppercase text-xl font-extrabold ">
               отворени подаци
             </span>
-            <p className="p1 pt-32">
+            <p className="p1 pt-[133px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -26,7 +26,7 @@ const Statistics = (): JSX.Element => {
               ex ea commodo consequat
             </p>
           </div>
-          <div className="w-1/2 rounded overflow-hidden my-5">
+          <div className="w-1/2 rounded overflow-hidden mt-5 mb-[22px]">
             <Image alt="image" src={statistics} className="w-full" />
           </div>
         </div>
