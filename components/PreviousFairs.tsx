@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+// images
 import previousFairs from "../public/assets/previousFairs.jpg";
 
 const PreviousFairs = (): JSX.Element => {
@@ -8,12 +10,7 @@ const PreviousFairs = (): JSX.Element => {
     <section className="wrapper lg:wrapper mb-16">
       <div className="l relative">
         <div className="rounded-lg overflow-hidden">
-          <Image
-            alt="image"
-            src={previousFairs}
-            placeholder="blur"
-            className="w-full"
-          />
+          <Image alt="image" src={previousFairs} className="w-full" />
         </div>
         <Link
           href=""

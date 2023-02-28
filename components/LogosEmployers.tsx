@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import microsoftImage from "../public/assets/logos/microsoft.png";
-import nestleImage from "../public/assets/logos/nestle.png";
+
+// images
+import microsoft from "../public/assets/logos/microsoft.png";
+import nestle from "../public/assets/logos/nestle.png";
 
 const LogosEmployers = (): JSX.Element => {
   return (
@@ -13,22 +15,22 @@ const LogosEmployers = (): JSX.Element => {
           <span className="tag tag-big bg-lightGray-100">ПОСЛОДАВЦИ</span>
         </div>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={microsoftImage} />
+          <Image alt="image" src={microsoft} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} />
+          <Image alt="image" src={nestle} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={microsoftImage} />
+          <Image alt="image" src={microsoft} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} />
+          <Image alt="image" src={nestle} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={microsoftImage} />
+          <Image alt="image" src={microsoft} />
         </Link>
         <Link href="" className="w-32 mx-16">
-          <Image alt="image" src={nestleImage} />
+          <Image alt="image" src={nestle} />
         </Link>
       </div>
     </section>

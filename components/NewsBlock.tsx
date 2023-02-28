@@ -16,7 +16,7 @@ const NewsBlock: FunctionComponent<IProps> = ({ news }) => {
   return (
     <section className="wrapper lg:wrapper md:pt-16 md:pb-32">
       <div className="l">
-        <h2 className="text-center md:w-4/5 xl:w-2/3 mx-auto md:pb-28">
+        <h2 className="text-center md:w-4/5 xl:w-2/3 mx-auto md:pb-[107px]">
           Будите информисани, све информације и обавештења на једном месту
         </h2>
         <div className="flex flex-wrap justify-between">

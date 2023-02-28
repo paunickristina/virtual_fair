@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import germanyImage from "@/public/assets/logos/germany.png";
-import gizImage from "@/public/assets/logos/giz.png";
-import nszImage from "@/public/assets/logos/nsz.png";
+
+// images
+import germany from "@/public/assets/logos/germany.png";
+import giz from "@/public/assets/logos/giz.png";
+import nsz from "@/public/assets/logos/nsz.png";
 
 const LogosPartners = (): JSX.Element => {
   return (
@@ -16,16 +18,16 @@ const LogosPartners = (): JSX.Element => {
           href=""
           className="flex items-center justify-center border-r border-lightGray-50"
         >
-          <Image alt="image" src={germanyImage} />
+          <Image alt="image" src={germany} />
         </Link>
         <Link
           href=""
           className="flex items-center justify-center border-r border-lightGray-50"
         >
-          <Image alt="image" src={gizImage} />
+          <Image alt="image" src={giz} />
         </Link>
         <Link href="" className="flex items-center justify-center">
-          <Image alt="image" src={nszImage} />
+          <Image alt="image" src={nsz} />
         </Link>
       </div>
     </section>

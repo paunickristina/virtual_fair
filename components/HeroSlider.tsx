@@ -2,7 +2,11 @@ import React, { FunctionComponent, useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
+
+// images
 import hero from "../public/assets/hero.jpg";
+import calendar from "../public/assets/svgs/calendar.svg";
+import arrow from "../public/assets/svgs/arrow-right-white.svg";
 
 type IProps = {
   fairs: {
@@ -31,17 +35,18 @@ const HeroSlider: FunctionComponent<IProps> = ({ fairs }): JSX.Element => {
   return (
     <section className="wrapper lg:wrapper border-b border-lightGray-50">
       {/* check this border: */}
-      <div className="l pb-[74px]">
+      <div className="l pb-[72px]">
         <Slider {...settings}>
           {fairs &&
             fairs.map((fair: fair) => (
               <div key={fair.id}>
                 <div className="flex justify-between">
-                  <div className="w-[38.5%] pl-[2%] pt-[5px]">
-                    <span className="tag tag-red text-[16px]">
+                  <div className="w-[38.5%] pl-[2%]">
+                    <div className="flex justify-between w-[186px] px-4 tag tag-red text-[16px]">
+                      <Image alt="image" src={calendar} />
                       27. НОВЕМБАР
-                    </span>
-                    <h1 className="pt-[30px] mb-2">
+                    </div>
+                    <h1 className="pt-[25px] mb-2">
                       Сајам запошљавања у Суботици
                     </h1>
                     <p className="mb-[26px] text-base">
@@ -57,15 +62,22 @@ const HeroSlider: FunctionComponent<IProps> = ({ fairs }): JSX.Element => {
                         Радних места
                       </p>
                     </div>
-                    <Link href="" className="btn btn-red mr-[27%]">
+                    <Link href="" className="btn btn-red px-[62px] mr-[15.3%]">
                       Детаљније
+                      <Image
+                        alt="image"
+                        src={arrow}
+                        className="!inline-block ml-3"
+                      />
                     </Link>
-                    <span className="heroSlider-current">
-                      0{activeSlide + 1}
-                    </span>
-                    <span className="font-semibold text-lightGray-200">
-                      0{fairs.length}
-                    </span>
+                    <div className="inline-block">
+                      <span className="heroSlider-current">
+                        0{activeSlide + 1}
+                      </span>
+                      <span className="font-semibold text-lightGray-300">
+                        0{fairs.length}
+                      </span>
+                    </div>
                   </div>
                   <div className="w-[57.5%]">
                     <Image alt="image" src={hero} priority />

@@ -7,7 +7,7 @@ import Head from "next/head";
 import HeroSlider from "@/components/HeroSlider";
 import NewsBlock from "@/components/NewsBlock";
 import Employers from "@/components/Employers";
-import Employees from "@/components/Employees";
+import Candidates from "@/components/Candidates";
 import Statistics from "@/components/Statistics";
 import PreviousFairs from "@/components/PreviousFairs";
 import LogosEmployers from "@/components/LogosEmployers";
@@ -33,7 +33,7 @@ const Home: NextPage = ({
       <HeroSlider fairs={data} />
       <NewsBlock news={data} />
       <Employers />
-      <Employees />
+      <Candidates />
       <Statistics />
       <PreviousFairs />
       <LogosEmployers />

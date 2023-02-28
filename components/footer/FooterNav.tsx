@@ -4,7 +4,7 @@ import Link from "next/link";
 const FooterNav = (): JSX.Element => {
   return (
     <section className="wrapper lg:wrapper rounded bg-primary-700">
-      <div className="l flex justify-evenly text-white py-9">
+      <div className="l flex justify-evenly text-lightGray-400 py-9">
         <div>
           <h5 className="uppercase text-base font-semibold mb-[22px]">ТРАЖИТЕ ПОСАО</h5>
           <p className="text-[13px] mb-[7px]">
