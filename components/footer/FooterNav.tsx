@@ -17,10 +17,10 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               ТРАЖИТЕ ПОСАО
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
           </div>
@@ -28,10 +28,10 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               НУДИТЕ ПОСАО
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Агенције за запошљавање</Link>
             </p>
           </div>
@@ -39,16 +39,16 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               О НАМА
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Продаја основних средстава</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
           </div>
@@ -56,10 +56,10 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               НСЗ МРЕЖА
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Позивни центар 0800/300-301</Link>
             </p>
           </div>
@@ -67,10 +67,10 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               ИНФО
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
           </div>
@@ -78,10 +78,10 @@ const FooterNav = (): JSX.Element => {
             <h5 className="uppercase text-base font-semibold mb-[22px]">
               ДОКУМЕНТА
             </h5>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Конкурси</Link>
             </p>
-            <p className="text-[13px] mb-[7px]">
+            <p className="text-[13px] mb-[7px] font-lato">
               <Link href="">Јединствени кодекс шифара</Link>
             </p>
           </div>

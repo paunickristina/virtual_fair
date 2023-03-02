@@ -49,7 +49,7 @@ const HeroSlider: FunctionComponent<IProps> = ({ fairs }): JSX.Element => {
                     <h1 className="pt-[25px] mb-2">
                       Сајам запошљавања у Суботици
                     </h1>
-                    <p className="mb-[26px] text-base">
+                    <p className="mb-[26px] text-base font-lato">
                       Филијала Суботица Националне службе за запошљавање
                       организује 43. сајам запошљавања у четвртак, 10. новембра
                     </p>
