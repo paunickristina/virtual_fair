@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // images
-import previousFairs from "../public/assets/previousFairs.jpg";
+import previousFairs from "../public/assets/previous-fairs.jpg";
 import arrow from "../public/assets/svgs/arrow-right-red.svg";
 
 const PreviousFairs = (): JSX.Element => {

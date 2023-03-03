@@ -12,7 +12,7 @@ type IProps = {
   }[];
 };
 
-const NewsBlock: FunctionComponent<IProps> = ({ news }) => {
+const NewsBlock: FunctionComponent<IProps> = ({ news }): JSX.Element => {
   return (
     <section className="wrapper lg:wrapper md:pt-16 md:pb-32">
       <div className="l">

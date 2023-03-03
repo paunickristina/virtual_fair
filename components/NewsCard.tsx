@@ -19,7 +19,7 @@ const formatDate = (date: Date) => {
   return new Date(date).toLocaleDateString("tr-TR");
 };
 
-const News: FunctionComponent<IProps> = ({ news }) => {
+const News: FunctionComponent<IProps> = ({ news }): JSX.Element => {
   return (
     <div className="w-[48.5%] lg:w-[23.5%]">
       <span className="tag tag-red">{news.description}</span>

@@ -15,7 +15,7 @@ const Candidates = (): JSX.Element => {
         </div>
         <div className="w-[40.7%]">
           <h2 className="pt-8 pb-[74px]">Кандидати</h2>
-          <p className="p1 mb-8 font-lato">
+          <p className="p1 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

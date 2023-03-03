@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Footer from "./footer/Footer";
 
-interface LayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
-}
+};
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout: FunctionComponent<LayoutProps> = ({ children }): JSX.Element => {
   return (
     <>
       <main>{children}</main>

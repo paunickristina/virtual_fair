@@ -152,8 +152,7 @@
     @apply font-semibold;
   }
   .p1 {
-    /* change font-family to Lato */
-    @apply text-base;
+    @apply text-base font-lato;
   }
   .p2 {
     font-size: 14px;

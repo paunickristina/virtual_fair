@@ -15,7 +15,7 @@ const Statistics = (): JSX.Element => {
             <span className="uppercase text-xl font-extrabold ">
               отворени подаци
             </span>
-            <p className="p1 pt-[133px] font-lato">
+            <p className="p1 pt-[133px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
