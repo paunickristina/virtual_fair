@@ -5,9 +5,7 @@ import Head from "next/head";
 
 // components
 import HeroImage from "@/components/HeroImage";
-import Employers from "@/components/about/Employers";
-import Candidates from "@/components/about/Candidates";
-import Video from "@/components/Video";
+import Accordion from "@/components/Accordion";
 
 // check this
 export const getServerSideProps: GetServerSideProps = async (context) => {
@@ -21,16 +19,13 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 const About: NextPage = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  console.log(data);
   return (
     <>
       <Head>
-        <title>Virtual Fair - About</title>
+        <title>Virtual Fair - F.A.Q.</title>
       </Head>
-      <HeroImage src={"/assets/about-us.jpg"} className="mb-[122px]" />
-      <Employers />
-      <Candidates />
-      <Video />
+      <HeroImage src={"/assets/faq.jpg"} className="mb-[76px]" />
+      <Accordion faqs={data} />
     </>
   );
 };

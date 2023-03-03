@@ -114,16 +114,25 @@
 }
 /* inter-800 - cyrillic_latin */
 @font-face {
-  font-display: block; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-display: block;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  src: url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.eot'); /* IE9 Compat Modes */
-  src: url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.woff') format('woff'), /* Modern Browsers */
-       url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.svg#Inter') format('svg'); /* Legacy iOS */
+  src: url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.eot"); /* IE9 Compat Modes */
+  src: url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../public/assets/fonts/inter/inter-v12-cyrillic_latin-800.svg#Inter")
+      format("svg"); /* Legacy iOS */
 }
 /* lato-regular - cyrillic_latin */
 @font-face {
@@ -227,6 +236,15 @@
   }
   .newsletter-input {
     @apply text-black opacity-[33%] font-medium text-[21px] outline-0 placeholder-black w-3/5;
+  }
+  .answer {
+    @apply h-0 overflow-hidden;
+  }
+  .answer.open .helper {
+    @apply h-[42px];
+  }
+  .answer.open {
+    @apply h-auto;
   }
 }
 
