@@ -1,6 +1,8 @@
-import type { NextPage } from "next";
+import type { ReactElement } from "react";
+import type { NextPageWithLayout } from "../_app";
 import { GetServerSideProps } from "next";
 import { InferGetServerSidePropsType } from "next";
+import Layout from "@/components/Layout";
 import Head from "next/head";
 
 // components
@@ -18,7 +20,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const About: NextPage = ({
+const About: NextPageWithLayout = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   console.log(data);
@@ -33,6 +35,11 @@ const About: NextPage = ({
       <Video />
     </>
   );
+};
+
+// define the layout per page
+About.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
 };
 
 export default About;
