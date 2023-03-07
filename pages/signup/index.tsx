@@ -3,6 +3,8 @@ import { GetServerSideProps } from "next";
 import { InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 
+// components
+import Signup from "@/components/signup/Signup";
 
 // change this
 export const getServerSideProps: GetServerSideProps = async (context) => {
@@ -13,17 +15,17 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Login: NextPage = ({
+const SignupPage: NextPage = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <>
       <Head>
-        <title>Virtual Fair - Login</title>
+        <title>Virtual Fair - Sign Up</title>
       </Head>
-      test
+      <Signup />
     </>
   );
 };
 
-export default Login;
+export default SignupPage;

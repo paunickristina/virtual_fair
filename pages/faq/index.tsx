@@ -18,7 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Faq: NextPageWithLayout = ({
+const FaqPage: NextPageWithLayout = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
@@ -33,8 +33,8 @@ const Faq: NextPageWithLayout = ({
 };
 
 // define the layout per page
-Faq.getLayout = function getLayout(page: ReactElement) {
+FaqPage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default Faq;
+export default FaqPage;

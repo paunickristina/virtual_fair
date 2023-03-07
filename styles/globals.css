@@ -246,6 +246,12 @@
   .answer.open {
     @apply h-auto;
   }
+  .signup-input {
+    @apply appearance-none block w-full text-black text-base border border-lightGray-400 rounded-lg px-4 py-[6px] mb-[15px] focus:outline-none focus:border-primary-700 focus:border-opacity-[44%];
+  }
+  .signup-span {
+    @apply inline-block text-black text-[13px] ml-1 mb-1;
+  }
 }
 
 @layer utilities {

@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Home: NextPageWithLayout = ({
+const HomePage: NextPageWithLayout = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   console.log(data);
@@ -45,8 +45,8 @@ const Home: NextPageWithLayout = ({
 };
 
 // define the layout per page
-Home.getLayout = function getLayout(page: ReactElement) {
+HomePage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default Home;
+export default HomePage;
