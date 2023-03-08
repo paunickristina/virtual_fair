@@ -13,8 +13,11 @@ import Video from "@/components/Video";
 
 // check this
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const res = await fetch(`http://localhost:4000/api/v1/job`);
-  const data = await res.json();
+  // const res = await fetch(`http://localhost:4000/api/v1/job`);
+  // const data = await res.json();
+  const data = {
+    "test": "test"
+  }
   return {
     props: { data },
   };

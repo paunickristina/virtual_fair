@@ -16,8 +16,11 @@ import LogosEmployers from "@/components/LogosEmployers";
 import Video from "@/components/Video";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const res = await fetch(`http://localhost:4000/api/v1/job`);
-  const data = await res.json();
+  // const res = await fetch(`http://localhost:4000/api/v1/job`);
+  // const data = await res.json();
+  const data = {
+    "test": "test"
+  }
   return {
     props: { data },
   };
@@ -32,8 +35,8 @@ const HomePage: NextPageWithLayout = ({
       <Head>
         <title>Virtual Fair</title>
       </Head>
-      <HeroSlider fairs={data} />
-      <NewsBlock news={data} />
+      {/* <HeroSlider fairs={data} />
+      <NewsBlock news={data} /> */}
       <Employers />
       <Candidates />
       <Statistics />
