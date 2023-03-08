@@ -228,6 +228,9 @@
   .btn-white {
     @apply bg-white text-primary-700;
   }
+  .btn-bordered {
+    @apply border border-lightGray-400 rounded-lg;
+  }
   .heroSlider-current {
     @apply font-semibold mr-3 inline-block after:inline-block after:align-middle after:bg-black after:w-[37px] after:h-[1px] after:ml-[10px] after:mb-1;
   }
