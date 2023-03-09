@@ -3,7 +3,7 @@ import React, { FunctionComponent } from "react";
 const SignupConfirm: FunctionComponent = (): JSX.Element => {
   return (
     <div className="pt-[152px]">
-      <p className="text-[24px] leading-[29px] px-[26px] py-9 border border-lightGray-400 rounded-lg">
+      <p className="text-[24px] leading-[29px] px-[26px] py-9 bordered">
         Молим Вас проверите ваше електронско поштанско сандуче или проверите
         спам
       </p>

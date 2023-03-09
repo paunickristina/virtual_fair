@@ -7,6 +7,7 @@ import Head from "next/head";
 
 // components
 import HeroVideo from "@/components/HeroVideo";
+import EmployersList from "@/components/EmployersList";
 import Employers from "@/components/Employers";
 import Candidates from "@/components/Candidates";
 
@@ -37,6 +38,7 @@ const Fairs2DPage: NextPageWithLayout = ({
         }
         className="mb-20"
       />
+      <EmployersList />
       <Employers />
       <Candidates className="mb-0" />
     </>

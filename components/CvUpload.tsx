@@ -22,7 +22,7 @@ const CvUpload = (): JSX.Element => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incid.
             </p>
-            <button className="btn btn-white btn-bordered w-[288px] pl-[29px] pr-0 text-left mb-7">
+            <button className="btn btn-white bordered w-[288px] pl-[29px] pr-0 text-left mb-7">
               <Image alt="" src={upload} className="inline-block mr-2" />
               <span>Приложи постојећи CV</span>
             </button>

@@ -11,7 +11,7 @@ export default function Document() {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
       </Head>
-      <body className="font-inter">
+      <body className="font-inter text-black text-[16px]">
         <Main />
         <NextScript />
       </body>
