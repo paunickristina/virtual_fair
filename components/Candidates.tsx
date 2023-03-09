@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -6,9 +6,15 @@ import Image from "next/image";
 import candidates from "../public/assets/candidates.jpg";
 import arrow from "../public/assets/svgs/arrow-right-red.svg";
 
-const Candidates = (): JSX.Element => {
+type IProps = {
+  className: string;
+};
+
+const Candidates: FunctionComponent<IProps> = ({ className }): JSX.Element => {
   return (
-    <section className="wrapper lg:wrapper bg-secondary-100 rounded-lg mb-32">
+    <section
+      className={`wrapper lg:wrapper bg-secondary-100 rounded-lg ${className}`}
+    >
       <div className="l flex justify-between pl-6 pr-14">
         <div className="w-[52.3%] rounded overflow-hidden my-5">
           <Image alt="image" src={candidates} className="w-full" />

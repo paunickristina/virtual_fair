@@ -1,20 +1,16 @@
 import type { ReactElement } from "react";
-import type { NextPageWithLayout } from "./_app";
+import type { NextPageWithLayout } from "../_app";
 import { GetServerSideProps } from "next";
 import { InferGetServerSidePropsType } from "next";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 
 // components
-import HeroSlider from "@/components/HeroSlider";
-import NewsBlock from "@/components/NewsBlock";
+import HeroVideo from "@/components/HeroVideo";
 import Employers from "@/components/Employers";
 import Candidates from "@/components/Candidates";
-import Statistics from "@/components/Statistics";
-import PreviousFairs from "@/components/PreviousFairs";
-import LogosEmployers from "@/components/LogosEmployers";
-import Video from "@/components/Video";
 
+// check this
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // const res = await fetch(`http://localhost:4000/api/v1/job`);
   // const data = await res.json();
@@ -26,30 +22,30 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const HomePage: NextPageWithLayout = ({
+const Fairs2DPage: NextPageWithLayout = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   console.log(data);
   return (
     <>
       <Head>
-        <title>Virtual Fair</title>
+        <title>Virtual Fair - Fairs 2D</title>
       </Head>
-      {/* <HeroSlider fairs={data} />
-      <NewsBlock news={data} /> */}
+      <HeroVideo
+        src={
+          "https://embed-ssl.wistia.com/deliveries/262fd8e350169efeecfd5bfce33b7997f5a8fec0.bin"
+        }
+        className="mb-20"
+      />
       <Employers />
-      <Candidates className="mb-32" />
-      <Statistics />
-      <PreviousFairs />
-      <LogosEmployers />
-      <Video />
+      <Candidates className="mb-0" />
     </>
   );
 };
 
 // define the layout per page
-HomePage.getLayout = function getLayout(page: ReactElement) {
+Fairs2DPage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default HomePage;
+export default Fairs2DPage;

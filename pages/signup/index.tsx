@@ -11,8 +11,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   // const res = await fetch(`http://localhost:4000/api/v1/job`);
   // const data = await res.json();
   const data = {
-    "test": "test"
-  }
+    test: "test",
+  };
   return {
     props: { data },
   };
@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 const SignupPage: NextPage = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  console.log(data)
+  console.log(data);
   return (
     <>
       <Head>

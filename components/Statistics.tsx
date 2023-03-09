@@ -11,7 +11,9 @@ const Statistics = (): JSX.Element => {
         <div className="l flex justify-between pr-6 pl-14">
           <div className="w-2/5 mt-6">
             <span className="tag tag-white">Саопштења</span>
-            <h2 className="uppercase pt-[34px] pb-2">Статистика тржишта рада</h2>
+            <h2 className="uppercase pt-[34px] pb-2">
+              Статистика тржишта рада
+            </h2>
             <span className="uppercase text-xl font-extrabold ">
               отворени подаци
             </span>
@@ -27,7 +29,7 @@ const Statistics = (): JSX.Element => {
             </p>
           </div>
           <div className="w-1/2 rounded overflow-hidden mt-5 mb-[22px]">
-            <Image alt="image" src={statistics} className="w-full" />
+            <Image alt="" src={statistics} className="w-full" />
           </div>
         </div>
       </section>
