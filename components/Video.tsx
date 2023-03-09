@@ -37,11 +37,11 @@ const Video = () => {
               <Image
                 onClick={() => handleVideo("pause")}
                 alt=""
-                src={play}
+                src={pause}
                 className="invisible group-hover:visible"
               />
             ) : (
-              <Image onClick={() => handleVideo("play")} alt="" src={pause} />
+              <Image onClick={() => handleVideo("play")} alt="" src={play} />
             )}
           </div>
         </div>
