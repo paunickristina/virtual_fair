@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import EmployersItem from "./EmployersItem";
+import Pagination from "./Pagination";
 
 const EmployersList = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const EmployersList = (): JSX.Element => {
           <EmployersItem className="w-[49%] mb-7" />
           <EmployersItem className="w-[49%] mb-7" />
         </div>
+        <Pagination className="mb-[132px]" />
       </div>
     </section>
   );
