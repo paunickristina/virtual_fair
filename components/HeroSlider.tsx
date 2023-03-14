@@ -58,7 +58,7 @@ const HeroSlider: FunctionComponent<IProps> = ({ fairs }): JSX.Element => {
                         <span className="font-bold">24</span> Послодавца
                       </p>
                       <p className="py-[9px] pl-[5.2%]">
-                        <span className="font-bold">{fair.numOfPos}</span>{" "}
+                        <span className="font-bold">{fair.numOfPos}</span>
                         Радних места
                       </p>
                     </div>

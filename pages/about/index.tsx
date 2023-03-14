@@ -32,7 +32,7 @@ const AboutPage: NextPageWithLayout = ({
       <Head>
         <title>Virtual Fair - About</title>
       </Head>
-      <HeroImage src={"/assets/about-us.jpg"} className="mb-[122px]" />
+      <HeroImage src={"/assets/about-us.jpg"} className="h-[530px] mb-[122px]" />
       <Employers />
       <Candidates />
       <Video />

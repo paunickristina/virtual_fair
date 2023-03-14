@@ -11,7 +11,7 @@ const HeroImage: FunctionComponent<IProps> = ({
 }): JSX.Element => {
   return (
     <section
-      className={`h-[530px] bg-no-repeat bg-center bg-cover ${className}`}
+      className={`bg-no-repeat bg-center bg-cover ${className}`}
       style={{ backgroundImage: `url(${src})` }}
     ></section>
   );

@@ -7,38 +7,38 @@ import Head from "next/head";
 
 // components
 import HeroImage from "@/components/HeroImage";
-import Accordion from "@/components/Accordion";
+import UserContent from "@/components/user/UserContent";
 
 // check this
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // const res = await fetch(`http://localhost:4000/api/v1/job`);
   // const data = await res.json();
   const data = {
-    "test": "test"
-  }
+    test: "test",
+  };
   return {
     props: { data },
   };
 };
 
-const FaqPage: NextPageWithLayout = ({
+const User: NextPageWithLayout = ({
   data,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  console.log(data)
+  console.log(data);
   return (
     <>
       <Head>
-        <title>Virtual Fair - F.A.Q.</title>
+        <title>Virtual Fair - User Account</title>
       </Head>
-      <HeroImage src={"/assets/faq.jpg"} className="h-[530px] mb-[76px]" />
-      {/* <Accordion faqs={data} /> */}
+      <HeroImage src={"/assets/cv-hero.jpg"} className="h-[240px]" />
+      <UserContent />
     </>
   );
 };
 
 // define the layout per page
-FaqPage.getLayout = function getLayout(page: ReactElement) {
+User.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default FaqPage;
+export default User;

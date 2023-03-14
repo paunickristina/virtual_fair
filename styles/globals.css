@@ -204,6 +204,12 @@
     max-width: 1352px;
     margin: 0 auto;
   }
+  .wrapper-f {
+    max-width: 100%;
+  }
+  .wrapper-f .l {
+    max-width: 1440px;
+  }
   .tag {
     @apply text-sm font-semibold capitalize py-2 px-5 rounded-full;
   }
@@ -254,6 +260,21 @@
   }
   .signup-span {
     @apply inline-block text-black text-[13px] ml-1 mb-1;
+  }
+  .user-nav-btn {
+    @apply relative w-[68.3%] bordered px-5 py-[11px] font-lato text-left mb-[10px];
+  }
+  .user-nav-btn.active {
+    @apply border-primary-700;
+  }
+  .user-cv-tab {
+    @apply w-[44%] font-medium pb-[14px] text-lightGray-500;
+  }
+  .user-cv-tab.active {
+    @apply relative text-black after:inline-block after:bg-primary-700 after:w-[54px] after:h-[2px] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2;
+  }
+  .user-cv-input {
+    @apply appearance-none block w-full text-black text-base border border-lightGray-400 rounded-lg px-4 py-[6px] mb-[15px] focus:outline-none focus:border-primary-700 focus:border-opacity-[44%];
   }
 }
 
