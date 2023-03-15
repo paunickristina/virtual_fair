@@ -16,7 +16,7 @@ const UserCV: FunctionComponent<IProps> = ({ className }): JSX.Element => {
   };
 
   return (
-    <div className={` bg-secondary-100 ${className}`}>
+    <div className={`bg-secondary-100 ${className}`}>
       <div className="flex justify-between text-center pt-[54px] px-11 border-b border-b-lightGray-50">
         <button
           onClick={() => handleClick(true)}
