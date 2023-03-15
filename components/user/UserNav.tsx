@@ -6,9 +6,9 @@ import chevron from "@/public/assets/svgs/chevron-right.svg";
 
 type IProps = {
   className: string;
-  activeProfile: any;
-  activeCv: any;
-  activeApplications: any;
+  activeProfile: React.MouseEventHandler<HTMLButtonElement>;
+  activeCv: React.MouseEventHandler<HTMLButtonElement>;
+  activeApplications: React.MouseEventHandler<HTMLButtonElement>;
   userProfile: boolean;
   userCv: boolean;
   userApplications: boolean;
