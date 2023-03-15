@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState } from "react";
 
 // components
-import CVForm from "./CVForm";
+import CVForm from "./CVForm/CVForm";
 import CVUpload from "./CVUpload";
 
 type IProps = {
