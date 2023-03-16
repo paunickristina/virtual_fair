@@ -1,30 +1,30 @@
 import React, { FunctionComponent, useState } from "react";
 
-type IProps = {
-  // className: string;
+const ChildComponent = () => {
+  return (
+    <div className="flex flex-wrap justify-between mb-[18px]">
+      <label className="w-full">
+        <span className="signup-span">Вештина</span>
+        <input className="user-cv-input" type="text" />
+      </label>
+    </div>
+  );
 };
 
-const Skills: FunctionComponent<IProps> = (): JSX.Element => {
+const Skills: FunctionComponent = (): JSX.Element => {
   const [numChildren, setNumChildren] = useState<number>(1);
   const children = [];
-
-  const ChildComponent = () => {
-    return (
-      <div className="flex flex-wrap justify-between mb-[18px]">
-        <label className="w-full">
-          <span className="signup-span">Вештина</span>
-          <input className="user-cv-input" type="text" />
-        </label>
-      </div>
-    );
-  };
 
   for (let i = 0; i < numChildren; i++) {
     children.push(<ChildComponent key={i} />);
   }
 
-  const handleClick = () => {
+  const handleAddComponent = () => {
     setNumChildren((count) => count + 1);
+  };
+
+  const handleRemoveComponent = () => {
+    setNumChildren((count) => count - 1);
   };
 
   return (
@@ -32,9 +32,18 @@ const Skills: FunctionComponent<IProps> = (): JSX.Element => {
       <h3 className="text-2xl font-normal mb-[34px]">Вештине</h3>
       {children}
       <div className="flex justify-end mb-[34px]">
+        {numChildren > 1 && (
+          <button
+            type="button"
+            onClick={handleRemoveComponent}
+            className="btn btn-white w-[120px] px-0 py-[7px] mr-4 border border-primary-700"
+          >
+            - Уклони
+          </button>
+        )}
         <button
           type="button"
-          onClick={handleClick}
+          onClick={handleAddComponent}
           className="btn btn-white w-[120px] px-0 py-[7px] border border-primary-700"
         >
           + Додај
